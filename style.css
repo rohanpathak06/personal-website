@@ -1,0 +1,100 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1a1a2e;
+    color: #e4f9ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(90deg, #ff4b5c, #ff9a76);
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #ffeed0;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+section {
+    max-width: 800px;
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #232526, #414345);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border: 4px dashed #ff4b5c;
+}
+
+section h2 {
+    color: #ff9a76;
+}
+
+.project-card {
+    background: #2c3e50;
+    border: 2px dashed #ff4b5c;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    margin: 0 0 0.5rem;
+    color: #ff9a76;
+}
+
+.project-card p {
+    margin: 0.5rem 0;
+    color: #e4f9ff;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    background: linear-gradient(90deg, #ff4b5c, #ff9a76);
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0;
+    }
+}
+
+header h1, section h2, .project-card h3, footer p {
+    animation: flicker 1.5s infinite;
+}
